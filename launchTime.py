@@ -60,10 +60,11 @@ class Controller(object):
         writer.writerows(self.alldata)
         csvfile.close()
 
-    if __name__=="__main__":
-        controller = Controller(10)
-        controller.run()
-        controller.saveDataToCSV()
+
+if __name__=="__main__":
+    controller =Controller(10)
+    controller.run()
+    controller.saveDataToCSV()
 
 
 
